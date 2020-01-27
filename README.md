@@ -1,2 +1,3 @@
 # sketch.py
- make sketch from your image.
+Make sketch from your image.
+Add your image as image.png.

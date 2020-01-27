@@ -3,7 +3,7 @@ import imageio
 import scipy.ndimage
 import cv2
 
-img="image.jpg"
+img="image.png"
 
 def grayscale(rgb):
 	return np.dot(rgb[...,:3],[0.299,0.587,0.114])
@@ -23,4 +23,4 @@ i=255-g
 b=scipy.ndimage.filters.gaussian_filter(i,sigma=10)
 r=dodge(b,g)
 
-cv2.imwrite('1.png',r)
+cv2.imwrite('sketch.png',r)
